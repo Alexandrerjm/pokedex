@@ -1,0 +1,213 @@
+@font-face {
+    font-family: 'pilot-2';
+    src: url(../css/pilotcommand1_2condital.ttf);
+}
+
+body{
+    background-color: #CACBCB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'verdana';
+}
+
+main.container{
+    display: flex;
+    justify-content: space-between;
+    height: 80%;
+    width: 45%;
+}
+
+.container .card-pokemon{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: 60%;
+}
+
+.container .pokemon-selecionado{
+    display: block;
+}
+
+.container .card-pokemon .area-pokemon-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50%;
+    width: 98%;
+    box-shadow: 3px 3px 20px #000;
+}
+
+
+.container .card-pokemon .pokemon-card-topo{
+    background-color: #7526D0;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.container .card-pokemon .bg-alakazan{
+    background-color: #C7663C;
+}
+.container .card-pokemon .bg-bulbasaur{
+    background-color: #53C73C;
+}
+.container .card-pokemon .bg-gyarados{
+    background-color: #163EAC;
+}
+.container .card-pokemon .bg-dragonite{
+    background-color: #DABB74;
+}
+.container .card-pokemon .bg-metagros{
+    background-color: #29455E;
+}
+
+
+.card-pokemon .area-pokemon-card .info-pokemon{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 50%;
+}
+
+.area-pokemon-card .info-pokemon .area-nome-pokemon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+
+.info-pokemon .area-nome-pokemon .tipo-pokemon{
+    background-color: #A25EEF;
+    text-align: center;
+    padding: 2px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 100%;
+    border-radius: 25px;
+    box-shadow: 0 0 5px;
+}
+.info-pokemon .area-nome-pokemon .bg-tipo-alakazam{
+    background-color: #EB7B4C;
+}
+.info-pokemon .area-nome-pokemon .bg-tipo-bulbasaur{
+    background-color: #39A124;
+}
+.info-pokemon .area-nome-pokemon .bg-tipo-gyarados{
+    background-color: #3E67D8;
+}
+.info-pokemon .area-nome-pokemon .bg-tipo-dragonite{
+    background-color: #987A33;
+}
+.info-pokemon .area-nome-pokemon .bg-tipo-metagros{
+    background-color: #6388A9;
+}
+
+
+.area-pokemon-card .info-pokemon .id-pokemon{
+    background-color: #A25EEF;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    margin-right: 30px;
+    padding: 5px;
+    font-weight: 600;
+    border-radius: 15px;
+    box-shadow: 0 0 5px;
+}
+.area-pokemon-card .info-pokemon .bg-id-alakazan{
+    background-color: #EB7B4C;
+}
+.area-pokemon-card .info-pokemon .bg-id-bulbasaur{
+    background-color: #39A124;
+}
+.area-pokemon-card .info-pokemon .bg-id-gyarados{
+    background-color: #3E67D8;
+}
+.area-pokemon-card .info-pokemon .bg-id-dragonite{
+    background-color: #987A33;
+}
+.area-pokemon-card .info-pokemon .bg-id-metagros{
+    background-color: #6388A9;
+}
+
+
+.card-pokemon .area-pokemon-card img.pokemon-grande{
+    position: absolute;
+    top: 70px;
+    left: 20%;
+    height: 250px;
+    width: 250px;
+}
+.container .card-pokemon .pokemon-card-baixo{
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.container .area-pokemon-card .card2{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 35%;
+}
+
+.area-pokemon-card .card2 .titulo-sh{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #626773bb;
+}
+
+.area-pokemon-card .area-pokemon-card2 .atributos{
+    color: #494949;
+}
+
+/* Area da lista dos pokemons */
+.container .lista-pokemon{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 35%;
+    row-gap: 13px;
+}
+
+.container .lista-pokemon .pokemon{
+    background-color: #626773bb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15%;
+    width: 98%;
+    cursor: pointer;
+    border-top-left-radius: 28px;
+    border-bottom-left-radius: 28px;
+    box-shadow: 3px 3px 10px #000;
+}
+
+.container .lista-pokemon .pokemon:hover{
+    transform: scale(1.07);
+}
+
+.container .lista-pokemon .ativo{
+    background-color: #D13545;
+    transform: scale(1.07);
+}
+
+.lista-pokemon .pokemon .img-pequena{
+    height: 85%;
+    margin-left: 5px;
+    border-radius: 15px;
+}
+
+.lista-pokemon .pokemon span{
+    color: #fff;
+    margin-right: 30px;
+    text-transform: uppercase;
+    font-family: 'pilot-2';
+}
