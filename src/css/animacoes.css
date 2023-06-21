@@ -1,0 +1,8 @@
+@keyframes cardPokemon {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
