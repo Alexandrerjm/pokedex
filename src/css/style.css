@@ -39,7 +39,7 @@ main.container{
     justify-content: space-around;
     align-items: center;
     height: 50%;
-    width: 98%;
+    width: 100%;
     box-shadow: 3px 3px 20px #000;
 }
 
@@ -140,9 +140,10 @@ main.container{
 .card-pokemon .area-pokemon-card img.pokemon-grande{
     position: absolute;
     top: 70px;
-    left: 20%;
-    height: 250px;
-    width: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 42%;
+    width: 50%;
 }
 .container .card-pokemon .pokemon-card-baixo{
     background-color: #fff;
@@ -159,7 +160,7 @@ main.container{
 
 .area-pokemon-card .card2 .titulo-sh{
     width: 100%;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 10px;
     border-bottom: 2px solid #626773bb;
@@ -167,6 +168,7 @@ main.container{
 
 .area-pokemon-card .area-pokemon-card2 .atributos{
     color: #494949;
+    font-size: 10px;
 }
 
 /* Area da lista dos pokemons */
@@ -185,6 +187,7 @@ main.container{
     justify-content: space-between;
     height: 15%;
     width: 98%;
+    padding: 0 5px;
     cursor: pointer;
     border-top-left-radius: 28px;
     border-bottom-left-radius: 28px;
