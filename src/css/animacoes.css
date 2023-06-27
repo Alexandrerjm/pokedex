@@ -6,3 +6,71 @@
         opacity: 1;
     }
 }
+
+@media (max-width: 768px){
+    .container{
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+
+    .container .pokemon-selecionado{
+        width: 100%;
+    }
+
+    .card-pokemon .area-pokemon-card .info-pokemon{
+        align-items: center;
+        margin-top: 1.5rem;
+    }
+
+    .area-pokemon-card .info-pokemon .area-nome-pokemon{
+        gap: 5px;
+    }
+
+    .card-pokemon .area-pokemon-card img.pokemon-grande{
+        height: 35%;
+        left: 50%;
+        top: 17%;
+    }
+
+    .container .area-pokemon-card .card2{
+        height: 80%;
+        width: 45%;
+        text-align: center;
+        overflow-y: auto;
+    }
+
+    .container .lista-pokemon{
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 5px;
+        height: 25%;
+        width: 100%;
+    }
+
+    .container .lista-pokemon .pokemon{
+        align-items: center;
+        justify-content: center;
+        height: 45%;
+        width: 20%;
+        border-radius: 50%;
+        box-shadow: 0 0 15px #000;
+    }
+
+    .lista-pokemon .pokemon span{
+        display: none;
+    }
+
+    .lista-pokemon .pokemon .img-pequena{
+        height: 70%;
+    }
+}
+
+@media (max-width: 500px){
+    .card-pokemon .area-pokemon-card .info-pokemon{
+        align-items: center;
+        position: absolute;
+        top: -6%;
+    }
+}
